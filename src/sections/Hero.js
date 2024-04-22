@@ -23,7 +23,6 @@ export default function Hero() {
                             <div className='icons'>
                                 <img src="https://skillicons.dev/icons?i=nodejs,express" alt="NodeJS & Express" />
                                 <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres" alt="Mongodb, MySQL & PostgreSQL" />
-                                {/* <img src="https://skillicons.dev/icons?i=php" alt="PHP" /> */}
                             </div>
                         </div>
                     </div>
