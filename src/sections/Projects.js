@@ -7,7 +7,7 @@ export default function Projects() {
             <div className="all-projects">
                 <div className="project">
                     <div className="project-picture">
-                        <a href="https://honkai-starraidle-frontend.vercel.app/" rel="noreferrer" target="_blank">
+                        <a href="https://www.starraidle.com/" rel="noreferrer" target="_blank">
                             <img src="assets/starraidle-guessed.png" alt="Starraidle screenshot" />
                         </a>
                     </div>
