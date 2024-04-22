@@ -1,0 +1,134 @@
+@import 'MobileMenu.scss';
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    box-sizing: border-box;
+    
+    button:hover {
+      cursor: pointer;
+    }
+  
+    a:hover {
+      cursor: pointer;
+      color: #2563eb;
+    }
+
+    #navigation-left {
+      font-weight: bold;
+      font-size: min(max(24px, 4vw), 28px);
+  
+      #dot {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #2563eb;
+        animation: colorChange 8s infinite;
+  
+        @keyframes colorChange {
+          0% {
+            color: $light-blue;
+          }
+          10% {
+            color: #4f46e5;
+          }
+          20% {
+            color: #7c3aed;
+          }
+          30% {
+            color: #9333ea;
+          }
+          40% {
+            color: #c026d3;
+          }
+          50% {
+            color: #db2777;
+          }
+          60% {
+            color: #c026d3;
+          }
+          70% {
+            color: #9333ea;
+          }
+          80% {
+            color: #7c3aed;
+          }
+          90% {
+            color: #4f46e5;
+          }
+          100% {
+            color: $light-blue;
+          }
+        }
+      }
+    }
+  
+    #navigation-right {
+      padding-right: 10px;
+      display: flex;
+      gap: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: min(max(13px, 2.5vw), 15px);
+
+      @media only screen and (max-width: 1200px) {
+        visibility: hidden;
+      }
+  
+      @media only screen and (max-width: 280px) {
+        gap: 0px;
+      }
+    
+      #burger-menu {
+        visibility: hidden;
+      }
+  
+      .nav-link {
+        position: relative;
+        display: inline-block;
+        padding: 8px 16px;
+        color: #000;
+        transition: color 0.5s;
+
+        @media only screen and (max-width: 1200px) {
+          width: 0;
+        }
+    
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 43%;
+          transform: translateX(-43%);
+          width: 0;
+          height: 2px;
+          background-color: $light-blue;
+          transition: width 0.5s ease, transform 0.5s ease;
+        }
+    
+        &::after {
+          left: auto;
+          right: 43%;
+          transform: translateX(43%);
+        }
+      }
+    
+      .nav-link:hover {
+        color: $light-blue;
+    
+        &::before,
+        &::after {
+          width: 43%;
+          transform: translateX(0%);
+        }
+      }
+    }
+}
