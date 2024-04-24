@@ -15,6 +15,7 @@ export default function Hero() {
                                 <img src="https://skillicons.dev/icons?i=js,ts" alt="JS & TS" />
                                 <img src="https://skillicons.dev/icons?i=react,nextjs" alt="React & NextJS" />
                                 <img src="https://skillicons.dev/icons?i=vue" alt="Vue" />
+                                <img src="https://skillicons.dev/icons?i=angular" alt="Angular" />
                                 <img src="https://skillicons.dev/icons?i=sass,tailwind,bootstrap" alt="Sass, TailwindCSS & Bootstrap" />
                             </div>
                         </div>
