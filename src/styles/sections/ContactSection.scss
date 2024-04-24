@@ -73,6 +73,15 @@
                     color: #60a5fa;
                     font-weight: 600;
                 }
+
+                .bottom-text {
+                    a {
+                        cursor: pointer;
+                        color: $light-blue;
+                        font-weight: 500;
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
