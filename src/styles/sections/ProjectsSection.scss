@@ -112,15 +112,31 @@
                 .project-info {
                     padding: 10px;
 
+                    p {
+                        a {
+                            color: #2563eb;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
+
                     .mini-title {
                         font-weight: 600;
                     }
 
                     .project-link {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 10px;
                         a {
                             color: #2563eb;
                             font-weight: 600;
                             cursor: pointer;
+                        }
+
+                        .git-link {
+                            font-size: 25px;
                         }
                     }
                 }
