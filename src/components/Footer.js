@@ -14,7 +14,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/nikola-stan%C4%8Di%C4%87-91a904244/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/nikola-dev/" target="_blank" rel="noreferrer">
                         {<FaLinkedin />}
                     </a>
                 </div>
