@@ -66,6 +66,35 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
+
+                <div className="project">
+                    <div className="project-picture">
+                        <a href="https://job-tracking-five.vercel.app/" rel="noreferrer" target="_blank">
+                            <img src="assets/screencapture-job-tracking.png" alt="Job Tracking screenshot" />
+                        </a>
+                    </div>
+                    <div className="project-description">
+                        <div className="project-title">
+                            <h4>Job Tracking Application:</h4>
+                            <img className="img-5" src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwindcss,supabase" alt="Vue, Tailwind CSS, Node.js and Express.js icons" />
+                        </div>
+                        <div className="project-info">
+                            <p>
+                                Track all your job applications in one place!
+                            </p>
+                            <p>
+                                With this app you can easily track and store all your job applications.
+                            </p>
+                            <div className="project-link">
+                                <a href="https://job-tracking-five.vercel.app/" rel="noreferrer" target="_blank">job-tracking-five.vercel.app</a>
+                                <a href="https://github.com/Nikoraii/job-tracking" target="_blank" rel="noreferrer" className="git-link">
+                                    <FaGithub />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
